@@ -1,0 +1,22 @@
+clone dan jalankan composer update
+
+change file .env .example menjadi .env
+run php artisan key:generate
+
+ubah nama db dll di env
+jalankan php artisan migrate
+
+php artisan make:migration create_user_table
+php artisan migrate
+
+php artisan make:seeder UserTableSeeder
+php artisan db:seed
+jika error
+composer dump-autoload
+
+//model
+php artisan make:model Berita
+mengarah ke tabel mana?
+
+//controller
+php artisan make:controller BeritaController
